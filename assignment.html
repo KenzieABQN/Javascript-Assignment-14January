@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <h1>Assignment</h1>
+    <p id = "identity"></p><hr>
+    <p id = "arithmatics"></p> <hr> 
+    <p id = "branch"></p> <hr>
+    <script>
+        let name = "Kenzie";
+        let age = 15;
+        let isStudent = true;
+        document.getElementById("identity").innerHTML = `Hello, here is your info: <br>
+        Name: ${name} <br>
+        Age: ${age} <br>
+        Are you a Student? ${isStudent}`;
+
+        let number1 = 9;
+        let number2 = 10;
+
+        let addition = number1+number2;
+        let subtraction = number1-number2;
+        let multiplication = number1*number2;
+        let division = number1/number2;
+
+        document.getElementById("arithmatics").innerHTML = `Addition = ${addition} <br>
+        Subtraction = ${subtraction} <br>
+        Multiplication = ${multiplication} <br>
+        Division = ${division}`;
+        
+        let score = 85;
+        let pass;
+        
+        if (score > 75) {pass = "passed!"}
+        else {pass = "not passed :("}
+
+        document.getElementById("branch").innerHTML = `Because your score is ${score}, you have ${pass}`;
+    </script>
+</body>
+</html>
